@@ -51,6 +51,9 @@ import org.json.JSONObject;
                     for(int i=0; i<mJsonArray.length();i++){
                         JSONObject mJsonObject = mJsonArray.getJSONObject(i);
                         String name = mJsonObject.getString("name");
+                        String[] palabra = (String[]) mJsonObject.get("palabra");
+
+
 
                         Toast.makeText(MainActivity.this, "Nombre:"+name, Toast.LENGTH_SHORT).show();
 
